@@ -1,0 +1,40 @@
+
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+  background-position: cover;
+
+  transition: transform 0.3s;
+
+  @include hover(transform, scale(1.2));
+
+  @include on-tablet {
+    height: 32px;
+    width: 32px;
+  }
+
+  &__phone {
+    background-image: url('../assets/icon-phone-call.png');
+    position: relative;
+
+    &:hover {
+      &::before {
+        content: '+1 (234) 567-89-00';
+      }
+    }
+  }
+
+  &__menu {
+    background-image: url('../assets/icon-Burger-menu (1).png');
+
+    &:hover {
+      background-image: url('../assets/icon-Burger-menu-hover (1).png');
+    }
+  }
+
+  &__close {
+    background-image: url('../assets/icon-close (1).png');
+  }
+}
