@@ -212,41 +212,65 @@
         <div class="about__content">
           <p class="about__description">
             We’re a London-based tech company on a mission to remove barriers between people and technology.
-To do this, we’re crafting intuitive, flawlessly connected products that improve our lives without getting in the way.
-No confusing tech-speak. No silly product names. Just artistry, passion and trust. And products we’re proud to share with our friends and family. Simple.
+            <br>
+            <br>
+To do this, we’re crafting intuitive, flawlessly connected products that improve our lives without getting in the way.<br >
+No confusing tech-speak. No silly product names. Just artistry, passion and trust. And products we’re proud to share with our friends and family. Simple.<br><br>
 Because beautiful tech shouldn’t be complicated.
           </p>
         </div>
       </section>
       <section class="contacts" id="contacts">
         <h2 class="contacts__title section-title section-title--align--left">Contact us</h2>
-        <form
-          class="contacts__form"
-          action="#"
-          method="post"
-        >
-          <input
-            type="text"
-            placeholder="Name"
-            class="contacts__field"
-            required
+        <div class="contacts__wrapper">
+          <form
+            class="contacts__form"
+            action="#"
+            method="post"
           >
-          <input
-            type="email"
-            placeholder="Email"
-            class="contacts__field"
-            required
-          >
-          <textarea
-            placeholder="Message"
-            class="contacts__field contacts__field--textarea"
-            required
-          ></textarea>
-          <button type="submit" class="button">send</button>
-        </form>
-        <div class="contacts__content">
-          <p class="contacts__phone">Phone: +1 234 5555-55-55</p>
-          <p class="contacts__email">Email: hello@nothing.com</p>
+            <input
+              type="text"
+              placeholder="Name"
+              class="contacts__field"
+              required
+            >
+            <input
+              type="email"
+              placeholder="Email"
+              class="contacts__field"
+              required
+            >
+            <textarea
+              placeholder="Message"
+              class="contacts__field contacts__field--textarea"
+              required
+            ></textarea>
+            <button type="submit" class="contact__button">send</button>
+          </form>
+        </div>
+        <div class="contact__contact contact">
+          <div class="contact__method">
+            <span class="contact__label">
+              Phone
+            </span>
+            <a href="tel:+12345555555" class="contact__link">+1 234 5555-55-55</a>
+          </div>
+          <div class="contact__method">
+            <span class="contact__label">
+              Email
+            </span>
+            <a href="mailto:hello@nothing.com" class="contact__link">hello@nothing.com</a>
+          </div>
+          <div class="contact__method">
+            <span class="contact__label">
+              Address
+            </span>
+            <a class="contact__link">
+            400 first ave.<br>
+            suite 700<br>
+            Minneapolis, MN 55401
+            </a>
+          </div>
         </div>
       </section>
     </main>

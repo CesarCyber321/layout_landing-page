@@ -18,13 +18,21 @@
   &__phone {
     background-image: url('../assets/icon-phone-call.png');
     position: relative;
-
-    &:hover {
-      &::before {
-        content: '+1 (234) 567-89-00';
-      }
-    }
+      &:hover::before {
+        position: absolute;
+        right: 100%;
+        color: #292929;
+        content: '+1 234 555-55-55';
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 8px ;
+        white-space: nowrap;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 20px; // espaço pro ícone
   }
+}
 
   &__menu {
     background-image: url('../assets/icon-Burger-menu (1).png');

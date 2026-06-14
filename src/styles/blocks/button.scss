@@ -17,7 +17,17 @@
     line-height: 100%;
     color: #fff;
     text-decoration: none;
+    border: none;
     border-radius: 8px;
+    cursor: pointer;
+    appearance: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background-color: #F8F8FA;
+      color: #292929;
+      border: 1px solid #292929;
+    }
   }
 
   @include on-desktop {
