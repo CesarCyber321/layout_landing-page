@@ -7,6 +7,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+
+    <link rel="icon" href="src/assets/logo.png">
     <title>Landing Page</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +40,7 @@
               >
             </a>
             <div class="top-bar__icons">
-              <a href="#" class="icon icon__phone"></a>
+              <a href="tel:+12345555555" class="icon icon__phone"></a>
               <a href="#menu" class="icon icon__menu"></a>
             </div>
           </div>
@@ -64,7 +66,7 @@
       </div>
       <div class="container">
         <div class="menu__bottom">
-          <!--#region nav-->
+          <!--#region navMenu-->
           <nav class="nav menu__nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -79,11 +81,11 @@
               <li class="nav__item">
                 <a href="#" class="nav__link">Cart(0)</a>
               </li>
-              <a href="#" class="menu__phone-number">+1 234 5555-55-55</a>
+              <a href="tel:+12345555555" class="menu__phone-number">+ 12 345-55-55-55</a>
               <a href="#" class="menu__call-to-order">call to order</a>
             </ul>
           </nav>
-          <!--#endregion nav-->
+          <!--#endregion navMenu-->
         </div>
       </div>
     </aside>
@@ -98,31 +100,37 @@
             <div class="recommended__container">
               <div class="recommended__products">
                 <article class="product recommended__product">
-                  <img
+                  <a href="#" class="product__link">
+                    <img
                     src="src/assets/Image-cll.png"
                     alt="Celular"
                     class="product__foto"
                     >
+                  </a>
                   <h3 class="product__title">Phone</h3>
                   <p>Designed with instinct, to bring joy back to the everyday. <br> the Glyph Interface, a perfected OS and exceptional dual camera. All startlingly fast.</p>
                   <p class="product__price">$499.00</p>
                 </article>
                 <article class="product recommended__product">
-                  <img
-                    src="src/assets/Image-phone.png"
-                    alt="phone"
-                    class="product__foto"
-                  >
+                  <a href="#" class="product__link">
+                    <img
+                      src="src/assets/Image-phone.png"
+                      alt="phone"
+                      class="product__foto"
+                    >
+                  </a>
                   <h3 class="product__title">Ear(2)</h3>
                   <p>Perfecting the path from artist to ear. So that music sounds just as it was intended.</p>
                   <p class="product__price">$149.00</p>
                 </article>
                 <article class="product recommended__product">
-                  <img
-                    src="src/assets/Image-phone2.png"
-                    alt="phone2"
-                    class="product__foto"
-                  >
+                  <a href="#" class="product__link">
+                    <img
+                      src="src/assets/Image-phone2.png"
+                      alt="phone2"
+                      class="product__foto"
+                    >
+                  </a>
                   <h3 class="product__title">Ear(stick)</h3>
                   <p>Tech you can’t feel. Leaving just space for sound to come to life. Powered by custom sound technology.</p>
                   <p class="product__price">$119.00</p>
@@ -194,7 +202,13 @@
               </article>
             </div>
             <div class="button">
-              <button class="button__link">View all</button>
+              <a
+                href="https://www.google.com/maps"
+                target="_blank"
+                class="button__link"
+              >
+                View all
+              </a>
             </div>
           </section>
         </div>
@@ -236,7 +250,7 @@ Because beautiful tech shouldn’t be complicated.
             >
             <input
               type="email"
-              placeholder="Email"
+              placeholder="Email@gmail.com"
               class="contacts__field"
               required
             >
@@ -265,7 +279,9 @@ Because beautiful tech shouldn’t be complicated.
             <span class="contact__label">
               Address
             </span>
-            <a class="contact__link">
+            <a class="contact__link" href="https://www.google.com/maps/search/?api=1&query=400+first+ave+Minneapolis+MN+55401"
+            target="_blank"
+            >
             400 first ave.<br>
             suite 700<br>
             Minneapolis, MN 55401

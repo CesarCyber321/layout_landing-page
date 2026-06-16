@@ -29,3 +29,7 @@
     }
   }
 }
+
+body:has(.page__menu:target) {
+  overflow: hidden; /* impede a rolagem da página enquanto o menu está ativo */
+}
